@@ -1,0 +1,53 @@
+﻿<krpano version="1.21" title="">
+
+	<include url="skin/vtourskin.xml" />
+	
+	<include url="skin/vtourskin.xml" />
+	<include url="skin/customskin.xml" />
+
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	
+	<action name="startup" autorun="onstart">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions() );
+	</action>
+	
+	<scene name="scene_00555910__Group_1__DSC_8741_DSC_8764_8_imagesX12b" title="프랑스 파리" onstart="" thumburl="panos/00555910__Group_1__DSC_8741_DSC_8764_8_imagesX12b.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/00555910__Group_1__DSC_8741_DSC_8764_8_imagesX12b.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/00555910__Group_1__DSC_8741_DSC_8764_8_imagesX12b.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1536,3072" />
+		</image>
+
+		<hotspot type="image" name="spot3" url="skin/vtourskin_hotspot_point.png" style="skin_hotspotstyle" ath="-24.848" atv="73.611" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />
+		<hotspot name="text" style="custom_hotspotext"  html="에펠탑 " ath="60.800" atv="-1.000" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />
+		
+		<hotspot type="image" name="spot4" url="skin/vtourskin_hotspot_point.png" style="skin_hotspotstyle" ath="-29.848" atv="73.611" distorted="false" zoom="false" linkmodal="modal2" onclick="custom_hotspotstyle_click();" />
+		<hotspot name="text1" style="custom_hotspotext"  html="라데팡스 " ath="65.800" atv="-1.000" distorted="false" zoom="false" linkmodal="modal2" onclick="custom_hotspotstyle_click();" />
+
+		<hotspot type="image" name="spot5" url="skin/vtourskin_hotspot_point.png" style="skin_hotspotstyle" ath="-21.848" atv="73.611" distorted="false" zoom="false" linkmodal="modal3" onclick="custom_hotspotstyle_click();" />
+		<hotspot name="text2" style="custom_hotspotext"  html="에투알 개선문 " ath="70.800" atv="-1.000" distorted="false" zoom="false" linkmodal="modal3" onclick="custom_hotspotstyle_click();" />
+		
+		<hotspot type="text" name="spot6" style="custom_hotspotext2"  html="센강 " ath="-31.844" atv="9.734" distorted="false" zoom="false" />
+
+
+	</scene>
+
+
+</krpano>
