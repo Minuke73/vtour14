@@ -25,7 +25,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="11.236" vlookat="37.868" fovtype="MFOV" fov="140.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="-2.210" vlookat="45.083" fovtype="MFOV" fov="140.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/00555910__Group_1__DSC_8741_DSC_8764_8_imagesX12b.tiles/preview.jpg" />
 
@@ -37,12 +37,12 @@
 		<hotspot name="text" style="custom_hotspotext"  html="에펠탑 " ath="-7.434" atv="67" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />
 		
 		<hotspot type="image" name="spot4" url="skin/vtourskin_hotspot_point.png" style="skin_hotspotstyle" ath="-3.085" atv="-1.5" distorted="false" zoom="true" linkmodal="modal2" onclick="custom_hotspotstyle_click();" />
-		<hotspot name="text1" style="custom_hotspotext"  html="라데팡스 " ath="-3.085" atv="-4.5" distorted="false" zoom="true" linkmodal="modal2" onclick="custom_hotspotstyle_click();" />
+		<hotspot name="text1" style="custom_hotspotext"  html="라데팡스 " ath="-3.2" atv="-4" distorted="false" zoom="true" linkmodal="modal2" onclick="custom_hotspotstyle_click();" />
 
-		<hotspot type="image" name="spot5" url="skin/vtourskin_hotspot_point.png" style="skin_hotspotstyle" ath="43.800" atv="2.034" distorted="false" zoom="true" linkmodal="modal3" onclick="custom_hotspotstyle_click();" />
-		<hotspot name="text2" style="custom_hotspotext"  html="에투알 개선문 " ath="42.300" atv="-1.334" distorted="false" zoom="true" linkmodal="modal3" onclick="custom_hotspotstyle_click();" />
+		<hotspot type="image" name="spot5" url="skin/vtourskin_hotspot_point.png" style="skin_hotspotstyle" ath="44.759" atv="5.334" distorted="false" zoom="true" linkmodal="modal3" onclick="custom_hotspotstyle_click();" />
+		<hotspot name="text2" style="custom_hotspotext"  html="에투알 개선문 " ath="41.300" atv="1.800" distorted="false" zoom="true" linkmodal="modal3" onclick="custom_hotspotstyle_click();" />
 		
-		<hotspot type="image" scale="1" enabled="false" name="arrow" url="skin/arrow.png" distorted="false" zoom="false" ath="40.844" atv="33.734"/>
+		<hotspot type="image" scale="1" enabled="false" name="arrow" url="skin/arrow.png" distorted="false" zoom="true" ath="40.844" atv="33.734"/>
 
 
 	</scene>
